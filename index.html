@@ -29,7 +29,7 @@
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p class="updated">Hymn Index &middot; Effective 14 September 2026</p>
+  <p class="updated">Hymn Index &middot; Effective 3 November 2026</p>
 
   <p>
     This policy explains how the <strong>Hymn Index</strong> app handles
@@ -43,8 +43,8 @@
     <strong>The app does not collect, store or share any personal information.</strong>
     There are no accounts, no analytics, no advertising and no third-party
     tracking. The hymn index is bundled inside the app. Tune audio is streamed
-    when you ask for it. There is an optional Support button that opens PayPal in
-    your browser, and nothing about it is recorded in the app.
+    when you ask for it. There is an optional Give a little page that opens
+    PayPal's own page in your browser. The app never sees what you enter there.
   </p>
 
   <h2>Information we collect</h2>
@@ -54,10 +54,14 @@
     microphone, camera or device identifiers.
   </p>
   <p>
-    The app does keep two things on your own device, and neither one identifies
-    you: your light or dark theme choice, and a cache of recently played tune
-    audio, up to about 250 MB, so that playing a tune again does not download it
-    twice. Both sit in the app's own storage. Neither is sent to us.
+    The app keeps a few things on your own device so it works the way you left
+    it: your favourite tunes, the tunes you played and the searches you made
+    recently, where you left off in a tune, whether you've seen the welcome
+    cards, whether you asked for a giving reminder, and 2 numbers that pace the
+    giving page. It also keeps a cache of tune audio, up to about 500 MB, so a
+    tune you've played doesn't download twice. All of this stays in the app's
+    own storage and is never sent to us. Android can clear the cache when your
+    phone runs short of space.
   </p>
   <p>
     What the app contains is an index: hymn numbers, metres, categories and tune
@@ -66,16 +70,39 @@
 
   <h2>Permissions</h2>
   <p>
-    The app declares six Android permissions. Two are for streaming: internet
+    The app has 9 Android permissions. Two are for streaming: internet
     access (<code>INTERNET</code>) and a check on network connectivity
     (<code>ACCESS_NETWORK_STATE</code>). Three let a tune keep playing when the
     app is in the background: <code>FOREGROUND_SERVICE</code>,
     <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code> and <code>WAKE_LOCK</code>.
-    The sixth, <code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>, is added by
-    the Android libraries the app is built with. It keeps an internal message
-    inside the app and grants access to nothing on your device. None of the six
-    gives the app your contacts, location, files, microphone, camera or device
-    identifiers.
+    <code>POST_NOTIFICATIONS</code> is asked for only when you tap
+    &ldquo;Remind me in 3 months&rdquo;, so the app can show that reminder.
+    <code>RECEIVE_BOOT_COMPLETED</code> keeps a reminder you asked for after the
+    phone restarts. <code>BIND_GET_INSTALL_REFERRER_SERVICE</code> lets the app
+    ask the Play Store app on your phone, once after install, whether you came
+    from a shared tune link, so it can open that tune. The answer stays on your
+    phone. The last, <code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>, is
+    added by the Android libraries the app is built with. It keeps an internal
+    message inside the app and grants access to nothing on your device. None of
+    the 9 gives the app your contacts, location, files, microphone, camera or
+    device identifiers.
+  </p>
+
+  <h2>Reminders, updates and cars</h2>
+  <p>
+    If you ask for a giving reminder, the app shows a notification every 3
+    months until you stop it. You can stop it on the Give a little page or in
+    Android's settings.
+  </p>
+  <p>
+    The app asks the Play Store app on your phone whether a newer version is
+    available, and if one is, offers to open the Play Store. Nothing about this
+    is sent to us.
+  </p>
+  <p>
+    When your phone is connected to a car, a watch or headphones, they can show
+    the tune that's playing and play, pause or skip it, as your lock screen does.
+    Nothing about this is sent to us.
   </p>
 
   <h2>Internet access and audio streaming</h2>
@@ -94,12 +121,12 @@
 
   <h2>Optional support</h2>
   <p>
-    The app has a Support button. If you choose Open PayPal, the app opens a
-    PayPal payment page in your web browser. Any payment details you enter go to
-    PayPal, under PayPal's own terms and privacy statement. The app never sees or
-    stores them, does not record whether you contributed, and nothing in the app
-    changes if you do. Giving unlocks no features. Every feature works the same
-    for everyone.
+    The app has a Give a little page. If you tap Give with PayPal, PayPal's own
+    page opens in your browser over the app. Any payment details you enter go to
+    PayPal, under PayPal's own terms and privacy statement. The app never sees
+    them and doesn't know whether you gave. A monthly gift is a PayPal plan you
+    can cancel in PayPal at any time. Giving unlocks no features; every feature
+    works the same for everyone.
   </p>
   <p>
     If you do contribute, PayPal gives the Developer the details it gives any
@@ -132,8 +159,8 @@
   <h2>Data retention and deletion</h2>
   <p>
     The app holds no personal data, so there is nothing for us to retain or
-    delete. Uninstalling the app removes it, its cached audio and its settings
-    from your device.
+    delete. Uninstalling the app removes it, its cached audio, your favourites
+    and its settings from your device.
   </p>
   <p>
     If you have contributed through PayPal and want the payer details PayPal gave
